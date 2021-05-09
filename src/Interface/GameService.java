@@ -41,7 +41,7 @@ public class GameService {
         {
             printCharacterList(arr);
             choice=sc.nextInt()-1;
-            player.team[i].setName(arr[choice-1].split(",")[0]);
+            player.team[i].setName(arr[choice].split(",")[0]);
             setAndCheckChosenCharacterType(player,i);
             arr[choice]=null;
         }
