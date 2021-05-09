@@ -1,0 +1,4 @@
+Wizard,200.0,m
+Knight,170.0,m
+Lamia,190.0,f
+Bnashee,140.0,f
