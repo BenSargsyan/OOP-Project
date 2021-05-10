@@ -12,6 +12,8 @@ public class GameService {
     {
         for(int i=0;i<arr.length;++i)
         {
+            if(arr[i]==null)
+                continue;
             System.out.println((i+1)+": " + arr[i]);
         }
     }
@@ -20,6 +22,11 @@ public class GameService {
     {
         for(int i=0;i<3;++i)
         {
+            if(player.team[i]==null)
+            {
+                System.out.println( " is dead you can't play with it ");
+                continue;
+            }
             System.out.println((i+1) + ": " + player.team[i].getName() + "   " + player.team[i].getHealthBar());
         }
     }
@@ -41,7 +48,7 @@ public class GameService {
         {
             printCharacterList(arr);
             choice=sc.nextInt()-1;
-            player.team[i].setName(arr[choice-1].split(",")[0]);
+            player.team[i].setName(arr[choice].split(",")[0]);
             setAndCheckChosenCharacterType(player,i);
             arr[choice]=null;
         }

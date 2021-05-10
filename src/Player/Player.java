@@ -16,9 +16,6 @@ public class Player {
         for(int i=0;i<3;++i)
         {
             team[i]=new Lamia();
-            team[i].setHealthBar(100.0);
-            team[i].setName("Character");
-            team[i].setGender('m');
         }
     }
 

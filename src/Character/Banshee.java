@@ -7,7 +7,7 @@ public class Banshee extends Hero {
     public Banshee()
     {
         this.name="Banshee";
-        this.healthBar=120.0;
+        this.healthBar=180.0;
         this.gender='f';
     }
 

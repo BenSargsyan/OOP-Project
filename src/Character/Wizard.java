@@ -17,7 +17,7 @@ public class Wizard extends Hero {
     public void attacks(Player[] arr) {
         System.out.println("Chose your opponent");
         Scanner sc=new Scanner(System.in);
-        for(int i=0;i<arr.length;++i)
+        for(int i=0;i<3;++i)
         {
             System.out.println((i)+1 +": " + arr[1].team[i].getName());
         }

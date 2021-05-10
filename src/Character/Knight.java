@@ -35,7 +35,7 @@ public class Knight extends Hero {
             }
             case 2 :
             {
-                for(int i=0;i<arr.length;++i)
+                for(int i=0;i<3;++i)
                 {
                     arr[1].team[y].setHealthBar(arr[1].team[y].getHealthBar()-16.5);                }
                 break;
